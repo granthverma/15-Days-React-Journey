@@ -20,3 +20,8 @@ What's Inside
 ##  Read React documentation and related resources
 
 <a href="https://react.dev/" target="_blank">React documentation</a>
+
+
+## how to start projects 
+
+<a href="https://react.dev/learn/start-a-new-react-project" target="_blank">Start React Journey</a>
