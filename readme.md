@@ -12,3 +12,11 @@ What's Inside
 .Projects: I've included the projects I worked on during this period. From simple components to more complex applications, these projects showcase the evolution of my React skills.
 
 .Resources: Find a curated list of resources that helped me along the way. Whether it's tutorials, articles, or documentation, these resources can be valuable for fellow React enthusiasts.
+
+
+
+# Day 1
+
+##  Read React documentation and related resources
+
+<a href="https://react.dev/" target="_blank">React documentation</a>
