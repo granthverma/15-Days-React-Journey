@@ -218,6 +218,7 @@ npm create vite@latest
 
 2. Second Step 👣 👣.
 
+Project Name :  Whatever You Want Your Project Name
 
 ```
 ? Project name: › vite-project
