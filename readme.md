@@ -189,8 +189,9 @@ So, cd . essentially means "change to the current directory," which is a no-op (
 
 ```
 
-
-
+# hello nameste
+## chalo kaam ki baat par aata hai 
+### chalo karo code thoda jab toh hum paise kam tha hai 
 
 # H1
 ## H2
