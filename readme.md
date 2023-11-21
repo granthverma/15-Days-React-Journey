@@ -17,18 +17,40 @@ What's Inside
 
 # Day 1
 
-##  Read React documentation and related resources
+## 1. Read React documentation and related resources
 
 <a href="https://react.dev/" target="_blank">React documentation</a>
 
 
-## how to start projects 
+## 2. How To Start Your First Projects 
 
-Read the article to know how to Start Your  Journey
+Read the article to know how to Start Your  Journey !!!
  
 <a href="https://react.dev/learn/start-a-new-react-project" target="_blank"> Start React Journey </a>
 
-## Understanding the Basics
+
+
+
+## 3. Step 1: Create a GitHub Repository :
+ To put your project up on GitHub, you will need to create a repository for it to live in.
+
+<a href="https://docs.github.com/en/get-started/quickstart/create-a-repo" target="_blank">How To Create GitHub Repository </a>
+
+
+##  Git commands for initializing a repository : 
+ ````
+     
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/granthverma/15-Days-React-Journey.git
+  git push -u origin main
+
+
+ ````
+
+## 4. Understanding the Basics
 
 
 Certainly! Before you start creating a React app, there are some basic things !!!! :
@@ -36,6 +58,8 @@ Certainly! Before you start creating a React app, there are some basic things !!
 
 1. React's Dual Realm:
 a : Unleashing Power on the Web with React DOM  💻 
+
+
 b : Crafting Mobile Magic with React Native 📲 📲
 
 
@@ -52,9 +76,7 @@ b : Crafting Mobile Magic with React Native 📲 📲
  
 " npx" is a package runner tool that comes bundled with npm (Node Package Manager). It was introduced to address the challenge of running packages without installing them globally. Instead of cluttering your global npm space with packages you might only use occasionally, "npx" allows you to run packages directly.
     
-
-
-Set up a simple React project using Create React App (CRA).🚀 
+## 5. Set up a simple React project using Create React App (CRA).🚀 
 
 1.  Install Node.js and npm 💻:
     Make sure you have Node.js and npm installed on your machine. You can download them from the official website:<a href="https://nodejs.org/en/" target="_blank">Node.js.</a> 
@@ -85,7 +107,7 @@ Set up a simple React project using Create React App (CRA).🚀
    Start the development server with the following command:
 
    ````
-    npm start
+    npm run start
      ````
 
 This command will start the development server and open your new React app in your default web browser. You should see a sample React app with a "Welcome to React" message.
@@ -93,7 +115,68 @@ This command will start the development server and open your new React app in yo
 Now you have successfully launched your first React project! You can start editing the files in the "src" directory to build your React components and customize your application.
 
 
+## 6 . Understanding React Scripts in package.json
 
+When you scaffold a new React project using tools like create-react-app, you'll notice a set of predefined scripts in the package.json file. These scripts are integral to managing and running various aspects of your React application.
+
+
+1. "start"
+
+   The "start" script is your go-to command during the development phase. When you run npm start in the terminal, this script kicks off the development server, allowing you to preview your React application in the browser. It enables hot-reloading, meaning any changes you make to your code will instantly reflect in the browser without requiring a manual refresh.
+
+   ```
+       "start": "react-scripts start",
+   ```
+
+ 2. "build"
+    
+    As your React application progresses and you prepare to deploy it to a production environment, the "build" script comes into play. Executing npm run build triggers this script, which generates a production-ready build of your application. This build is optimized for performance, and the output is typically a set of static files that can be easily served by a web server.
+
+  ```
+      "build": "react-scripts build"
+       
+   ```
+
+ 3. "test"
+
+    Testing is a crucial aspect of any software development process, and the "test" script facilitates running your application's test suite. Executing npm test launches the test runner, allowing you to verify that your components and functions behave as expected. This script is especially valuable in maintaining the reliability and integrity of your codebase.
+
+  ```
+
+    "test": "react-scripts test"
+   
+   ```
+    
+
+ 4. "eject"
+
+   While React strives to provide a streamlined and opinionated development experience, there may be instances where you need more control over your project configuration. The "eject" script allows you to "eject" from the default configuration provided by create-react-app, exposing all the configuration files (such as webpack and Babel) so you can customize them according to your needs.
+
+  ```
+
+   "eject": "react-scripts eject"
+
+ ```
+
+ Important Note: Ejecting is a one-way operation, so it's advisable to use this script with caution and understand the implications.
+
+
+
+In conclusion, these scripts in the "scripts" section of your package.json file serve as powerful tools for developing, testing, building, and customizing your React application. By leveraging these scripts effectively, you can streamline your development workflow and ensure a smooth deployment process.
+
+
+
+Important Commands :
+
+1. cd .:
+
+cd: Change directory command.
+.: Refers to the current directory.
+So, cd . essentially means "change to the current directory," which is a no-op (no operation) as you are already in that directory.
+
+2.ls:
+
+ls: List the contents of the current directory.
 
 
 
