@@ -189,9 +189,148 @@ So, cd . essentially means "change to the current directory," which is a no-op (
 
 ```
 
-# hello nameste
-## chalo kaam ki baat par aata hai 
-### chalo karo code thoda jab toh hum paise kam tha hai 
+
+### Congratulations ✨ Your First React App
+
+![Alt text](ReactfirstApp.png)
+
+
+
+
+# VITE 
+
+Now Days We Use Vite Beacause Fast compilation less Time Compare To React-create -app
+
+
+### Getting Started Vite || Read Vite documentation 
+
+
+<a href="https://vitejs.dev/guide/" target="_blank">  Getting Started Vite </a>
+
+ ## Start Your First Vite Project
+
+1. First Step
+
+```
+npm create vite@latest
+
+```
+
+2. Second Step 👣 👣.
+
+
+```
+? Project name: › vite-project
+
+my-first-project
+
+```
+
+3. Third Step 👣 👣.
+
+Select a framework:  Drop Down The 
+
+```
+
+    Vanilla
+    Vue
+    React
+    Preact
+    Lit
+    Svelte
+    Solid
+    Qwik
+    Others
+
+
+    Select React
+
+
+```
+4. Fourth Step 👣 👣.
+
+Select a variant: › - Use arrow-keys. Return to submit.
+        
+
+
+
+```
+ TypeScript
+    TypeScript + SWC
+    JavaScript
+    JavaScript + SWC
+
+
+    Select JavaScript
+
+```
+
+
+##Here are the steps to run a Vite app
+
+1. Open your terminal or command prompt.
+
+2. Change the directory to "01vitebasic":
+
+```
+ cd 01vitebasic
+
+ //Refers to the current director
+
+
+ README.md       index.html      package.json    public          src             vite.config.js
+
+ // make sure package.json  is present
+
+```
+
+3.Install the necessary dependencies using npm:
+
+```
+npm install
+
+
+// node modules is missing to install missing package run this command
+
+
+```
+
+
+4. Start the development server with the following command:
+
+```
+  npm run dev
+ 
+
+```
+
+
+### Congratulations ✨ Your First Vite App
+
+> Important Notes :clean the defults Scr files and code
+
+![Alt text](vitefirstapp.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+makedown comment future refencence
+
 
 # H1
 ## H2
