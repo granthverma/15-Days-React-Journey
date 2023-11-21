@@ -185,9 +185,16 @@ So, cd . essentially means "change to the current directory," which is a no-op (
  ls 
  ls: List the contents of the current directory.
 
+ after ls  package.json must visible to start
+
 ```
 
 
 
 
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
