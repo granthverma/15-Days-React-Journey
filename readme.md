@@ -166,17 +166,27 @@ In conclusion, these scripts in the "scripts" section of your package.json file 
 
 
 
-Important Commands :
+##7 Important Commands :
+
 
 1. cd .:
-
+```
 cd: Change directory command.
-.: Refers to the current directory.
+
+.: Refers to the current director
+
+```
+
 So, cd . essentially means "change to the current directory," which is a no-op (no operation) as you are already in that directory.
 
 2.ls:
 
-ls: List the contents of the current directory.
+```
+ ls 
+ ls: List the contents of the current directory.
+
+```
+
 
 
 
