@@ -192,9 +192,52 @@ So, cd . essentially means "change to the current directory," which is a no-op (
 
 
 
+# H1
+## H2
+### H3
 
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
 
+**bold text**
+
+*italicized text*
+
+
+> blockquote
+
+
+
+1. First item
+2. Second item
+3. Third item
+
+
+
+
+- First item
+- Second item
+- Third item
+
+
+
+`code`
+
+
+
+	---
+
+
+
+  ![alt text](image.jpg)
+
+  [title](https://www.example.com)
+
+
+
+  	Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
