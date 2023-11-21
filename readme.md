@@ -25,3 +25,10 @@ What's Inside
 ## how to start projects 
 
 <a href="https://react.dev/learn/start-a-new-react-project" target="_blank">Start React Journey</a>
+
+````
+npx create-react-app my-app
+cd my-app
+npm start
+
+````
