@@ -266,8 +266,7 @@ Select a variant: › - Use arrow-keys. Return to submit.
 
 ```
 
-
-##Here are the steps to run a Vite app
+##  Here are the steps to run a Vite app
 
 1. Open your terminal or command prompt.
 
