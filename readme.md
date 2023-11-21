@@ -115,7 +115,7 @@ This command will start the development server and open your new React app in yo
 Now you have successfully launched your first React project! You can start editing the files in the "src" directory to build your React components and customize your application.
 
 
-##  . Understanding React Scripts in package.json
+## 6 . Understanding React Scripts in package.json
 
 When you scaffold a new React project using tools like create-react-app, you'll notice a set of predefined scripts in the package.json file. These scripts are integral to managing and running various aspects of your React application.
 
@@ -186,6 +186,7 @@ So, cd . essentially means "change to the current directory," which is a no-op (
  ls: List the contents of the current directory.
 
 ```
+
 
 
 
