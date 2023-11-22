@@ -1,5 +1,5 @@
 
-
+import Hero from "./Hero"
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
 
        <a href="https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige">best playlist on youtube   </a>
       </header>
+
+      <Hero/>
     </div>
   );
 }

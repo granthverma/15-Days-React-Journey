@@ -312,9 +312,28 @@ npm install
 ![Alt text](vitefirstapp.png)
 
 
+## Day 2  Understand The React Flow And Structure 
+ 
+ 
+### File Structure 
+
+1. Pubilc Folder : index.html , images 
+
+a. index.html file : it just normal html file 
+
+```
+ <noscript>You need to enable JavaScript to run this app.</noscript>
+
+ // its basically  means that if a user has JavaScript disabled in their browser, they will see the message "You need to enable JavaScript to run this app."
+ <div id="root"></div>  
 
 
 
+```
+> The <div id="root"></div> serves as the placeholder for your React application.
+When you build your React application, it generates a bundled JavaScript file (often named something like main.js or bundle.js).
+This JavaScript file includes the code for your React components and logic.
+The JavaScript file is then included in your HTML file, and it interacts with the "root" element, rendering your React components into it.
 
 
 
