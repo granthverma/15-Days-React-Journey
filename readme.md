@@ -315,12 +315,12 @@ npm install
 ## Day 2  Understand The React Flow And Structure 
  
  
-### File Structure 
+### File Structure in React
 
 1. Pubilc Folder : index.html , images 
 
 
-a1. index.html file : it just normal html file 
+a1. index.html file : it just normal html file  , single page application
 ![Alt text](<pubilefile and other files.png>)
 ```
  <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -355,6 +355,129 @@ c1. robots.txt : The robots.txt file is a text file placed on a website's server
 
 
 
+3. Now we talk about src files :
+
+![Alt text](<scr files.png>)
+
+
+3a. App.js : the App.js file is often a central component where the main structure of your application is defined. This is where you might organize and compose other components to build the overall structure of your user interface.
+
+Here is a simple example of what an App.js file in a React project might look like:
+
+```
+
+// Import necessary modules and components
+import React from 'react';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+
+// Define the App component
+// 
+function App() {
+  return (
+    // JSX representing the structure of your application
+    <div className="App">
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+// Export the App component for use in other parts of the application
+export default App;
+
+
+```
+
+
+3b.index.js : the index.js file is typically the entry point for rendering your React application into the HTML page. It is used to import the main React component and render it into the DOM. The ReactDOM.render function is commonly used for this purpose.
+
+(name kuch bhi ho skata hai )
+
+
+Here is a basic example of what an index.js file might look like in a React project:
+
+```
+
+// Import necessary modules
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'; // Assuming App is your main React component
+import './index.css'; // Optionally, import styles
+
+// Render the App component into the root element in the HTML
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  
+    
+    <App />
+    
+   
+
+);
+
+//const root = name of  fnf
+//ReactDOM = react dom its virtual dom of react (tree structure)
+//createRoot = create a root 
+// document.getElementById = selected the id 
+// root.render = render the root 
+
+
+
+```
+
+
+
+### Create Component In React : 
+
+1. Functional Components: 
+
+```
+
+// function name  start with capital letter
+function Hero() {
+
+    return(
+
+        <> //fragment components  its only one component its way we use 
+     
+         <h2> Second Components</h2>
+         
+         <p>  Components are the building blocks of a React application,
+             and they can be thought of as reusable, independent pieces of code 
+            that encapsulate a specific functionality or UI element.</p>
+
+
+            <p>
+
+          some imporant rule must you follow   
+                1. file name start with capital letter 
+                2. function name start with capital letter 
+                3. create a function first letter must capital letter
+                4. export fnf ,default Name 
+                5. import in app js 
+                6  call in fnf name 
+                7. fragment components
+                
+            </p>
+        </>
+       
+
+      
+    )
+    
+}
+
+
+export default Hero 
+
+
+// export for import in app.js its main componets 
+
+```
 
 
 
