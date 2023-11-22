@@ -486,7 +486,7 @@ export default Hero
 ![Alt text](<vitefilestructure .png>)
 
 
-1.  index.html :  Some as react major diffence is script file direct load in index.html
+1 .  index.html :  Some as react major diffence is script file direct load in index.html
 
 
 ```
@@ -503,7 +503,9 @@ export default Hero
 
 ```
 
-> ```
+1a .there is script file is not loading thats why we use script direct in html file
+
+```
 "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -513,7 +515,7 @@ export default Hero
 
 ```
 
-2. main.jsx :the main.jsx file serves as the entry point for your application. This file is responsible for rendering the root component of your React app into the DOM. It is often the file specified in the src attribute of the script tag in your HTML file.
+2 . main.jsx :the main.jsx file serves as the entry point for your application. This file is responsible for rendering the root component of your React app into the DOM. It is often the file specified in the src attribute of the script tag in your HTML file.
 
 
 ```
@@ -535,7 +537,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // .render direct render file 
 ```
 
-3. App.jsx :App.jsx file as part of your React project, it would typically contain the definition of your main App component. 
+3  App.jsx :App.jsx file as part of your React project, it would typically contain the definition of your main App component. 
 
 ```
 import { useState } from 'react'
