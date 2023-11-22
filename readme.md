@@ -312,7 +312,7 @@ npm install
 ![Alt text](vitefirstapp.png)
 
 
-## Day 2  Understand The React Flow And Structure 
+## Day 2  Understand The React & Vite Flow And Structure 
  
  
 ### File Structure in React
@@ -442,7 +442,7 @@ function Hero() {
 
     return(
 
-        <> //fragment components  its only one component its way we use 
+        <> //fragment components  its only one component beacause we use 
      
          <h2> Second Components</h2>
          
@@ -454,9 +454,9 @@ function Hero() {
             <p>
 
           some imporant rule must you follow   
-                1. file name start with capital letter 
+                1. file name start with capital letter  its for good  coding practice
                 2. function name start with capital letter 
-                3. create a function first letter must capital letter
+                3. when you create a function first letter must in capital letter
                 4. export fnf ,default Name 
                 5. import in app js 
                 6  call in fnf name 
@@ -478,6 +478,134 @@ export default Hero
 // export for import in app.js its main componets 
 
 ```
+
+### Vite Flow And Structure :
+
+> mostly some as react, there some files we discuss are following:  
+
+![Alt text](<vitefilestructure .png>)
+
+
+1.  index.html :  Some as react major diffence is script file direct load in index.html
+
+
+```
+ <body>
+    <div id="root"></div>
+
+  <!-- The root div where your React app will be mounted -->
+
+   <script type="module" src="/src/main.jsx"></script>
+
+<!-- The script tag importing your main JavaScript module -->
+
+  </body>
+
+```
+
+> ```
+"dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+<!--  there is script file is not loading thats why we use script direct in html file  -->
+
+
+```
+
+2. main.jsx :the main.jsx file serves as the entry point for your application. This file is responsible for rendering the root component of your React app into the DOM. It is often the file specified in the src attribute of the script tag in your HTML file.
+
+
+```
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+// Render the root component into the root element in the HTML 
+// major differnce direct work not holding any root elements 
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+// .render direct render file 
+```
+
+3. App.jsx :App.jsx file as part of your React project, it would typically contain the definition of your main App component. 
+
+
+```
+import { useState } from 'react'
+import Zero from './Zero' //Zero is another component 
+
+
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+
+<h1> Hello Nameste , its My first Vite  React App ✨ </h1>
+<h2>  Chai☕️ aur React 💻 || By Hitesh Sir 👨🏻‍🏫 </h2>
+
+<Zero/> // called the compontent ,Other components and content can be added 
+    </>
+    
+     
+        
+    
+  )
+}
+
+export default App
+
+
+```
+
+### Create Component In Vite :
+
+>  some as react only file name change .js  to.jsx 
+
+1. file name start with Capital letter ex - Zero.jsx
+2. function name also start with capital letter ex - Zero
+```
+function Zero(params) {
+
+    return (
+
+        <h1>this is second compontent in jsx </h1>
+    )
+    
+}
+
+
+
+
+export default Zero
+```
+3. if use more one things in zero file use fragment components because they allow only one compontes
+4. export  default zero  when export then you able to import components in main app files 
+5. import zero compontes in App.jsx
+6. called the compontent in App.jsx file ,Other components and content according to your projects 
+
+
+### second compontent in vite 
+
+![Alt text](<vite second compents.png>)
+
+
+
+
+
+
+
+
+
 
 
 

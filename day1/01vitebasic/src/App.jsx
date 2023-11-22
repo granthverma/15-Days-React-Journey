@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Zero from './Zero'
 
 
 
@@ -10,6 +11,8 @@ function App() {
 
 <h1> Hello Nameste , its My first Vite  React App ✨ </h1>
 <h2>  Chai☕️ aur React 💻 || By Hitesh Sir 👨🏻‍🏫 </h2>
+
+<Zero/>
     </>
     
      
