@@ -537,7 +537,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 3. App.jsx :App.jsx file as part of your React project, it would typically contain the definition of your main App component. 
 
-
 ```
 import { useState } from 'react'
 import Zero from './Zero' //Zero is another component 
@@ -565,7 +564,12 @@ function App() {
 export default App
 
 
+
 ```
+
+
+
+
 
 ### Create Component In Vite :
 
@@ -583,9 +587,6 @@ export default App
 
 
 
-
-
-
 ```
 function Zero(params) {
 
@@ -600,8 +601,11 @@ function Zero(params) {
 export default Zero
 
 ```
-### second compontent in vite 
 
+
+
+
+### second compontent in vite 
 
 ![Alt text](<vite second compents.png>)
 
@@ -672,3 +676,5 @@ makedown comment future refencence
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
+
+
