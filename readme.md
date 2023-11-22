@@ -319,8 +319,9 @@ npm install
 
 1. Pubilc Folder : index.html , images 
 
-a1. index.html file : it just normal html file 
 
+a1. index.html file : it just normal html file 
+![Alt text](<pubilefile and other files.png>)
 ```
  <noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -349,6 +350,8 @@ c1. robots.txt : The robots.txt file is a text file placed on a website's server
 
 
 3c.  package.json :The package.json file is a metadata file for a Node.js project, and it is used to manage the project's dependencies, scripts, and other configurations. In a React project, the package.json file is a key component for managing the project's dependencies, scripts, and various settings.
+
+4d. Readme.md : The README.md file typically serves as the primary documentation for your project, providing information about its purpose, how to set it up, how to use it, and any other relevant details for developers or contributors
 
 
 
