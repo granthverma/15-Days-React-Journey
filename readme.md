@@ -596,6 +596,7 @@ export default Zero
 
 ### second compontent in vite 
 
+
 ![Alt text](<vite second compents.png>)
 
 
@@ -604,6 +605,7 @@ export default Zero
 
 
 
+![Alt text](<vite second compents.png>)
 
 
 
