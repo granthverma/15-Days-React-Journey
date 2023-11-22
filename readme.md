@@ -569,10 +569,23 @@ export default App
 
 ### Create Component In Vite :
 
->  some as react only file name change .js  to.jsx 
+  some as react only file name change .js  to.jsx 
+
+
+
 
 1. file name start with Capital letter ex - Zero.jsx
 2. function name also start with capital letter ex - Zero
+3. if use more one things in zero file use fragment components because they allow only one compontes
+4. export  default zero  when export then you able to import components in main app files 
+5. import zero compontes in App.jsx
+6. called the compontent in App.jsx file ,Other components and content according to your projects 
+
+
+
+
+
+
 ```
 function Zero(params) {
 
@@ -584,16 +597,9 @@ function Zero(params) {
 }
 
 
-
-
 export default Zero
+
 ```
-3. if use more one things in zero file use fragment components because they allow only one compontes
-4. export  default zero  when export then you able to import components in main app files 
-5. import zero compontes in App.jsx
-6. called the compontent in App.jsx file ,Other components and content according to your projects 
-
-
 ### second compontent in vite 
 
 
@@ -605,7 +611,7 @@ export default Zero
 
 
 
-![Alt text](<vite second compents.png>)
+
 
 
 
