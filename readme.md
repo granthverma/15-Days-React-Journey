@@ -752,6 +752,106 @@ ownRender(reactElements ,secondContainer)
 ```
 
 
+### Deep UnderStanding main.jsx and app.jsx
+
+
+1. In App.jsx we create method so we can create own methods in main.jsx
+1a. we directly call fnf but we don't use it not good practice thats why 
+    we use <MyApp/> , MyApp()
+
+```
+function MyApp() {
+
+  return( 
+    <div>
+      <h1>Custom App ||| ✨</h1>
+    </div>
+  )
+  
+}
+ 
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  
+   
+
+    // MyApp()  fnf hai toh run kiya ja sakate hai but don't follow 
+  
+)
+```
+
+2. tree structure (object ) inject :
+
+its not 
+
+```
+
+
+// const reactElements = {
+//   type: 'A',
+//   props :{
+//       href :'https://granthcodes.com/',
+//       target : '_blank'
+//   },
+//   children: 'Click me to  visit portfolio'
+// }
+
+//direct ho  raha toh pass karte hai , nahi hoga because to ye object hai
+
+```
+2a. systax is not right and  we must react rules 
+
+
+2b . its right way to create the element 
+
+```
+
+const anElement = (
+  <a href='https://google.com' target='_blank'> vist gooogle </a>
+)
+
+```
+
+3 Evaluate  Expression : We Evaluate value  thriduser in reactelement by using Expression {} 
+3a . only final value be pass in this n most don't use any loops
+
+```
+const thriduser = "himanshu ji"
+
+const reactelement = React.createElement(
+  'a',
+  {href: 'https://google.com' , target: 'blank'},
+  'click me to visit google by react element',
+  thriduser
+)
+
+
+////
+
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  
+    
+
+     reactelement
+
+    
+  
+)
+
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 

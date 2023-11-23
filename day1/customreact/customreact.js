@@ -27,6 +27,10 @@ function ownRender(reactElements ,thridcontainer) {
 
 const  domELe =document.createElement(reactElements.type)
 domELe.innerHTML = reactElements.children
+
+/**
+ * same as direct 
+ */
 for (const prop in reactElements.props ) {
     if(prop === 'children')continue;
     domELe.setAttribute(prop ,reactElements.props[prop])
@@ -38,7 +42,14 @@ thridcontainer.appendChild(domELe)
 
 }
 
-
+/**
+ * for in loop liya then prop in mein reactElements.props define kiya
+ * old mein pahale check karne ke liya  if use kiya karte tha
+ * aur check karte tha ki prop agar equal hai child property ki contine karo
+ * nahi toh stop kar do 
+ * same hai bas name change pahle direact name tha now us hai prop bol rha haiu 
+ * then [] arry props likha raha hai 
+ */
 
 
  /**
