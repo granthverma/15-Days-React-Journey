@@ -618,11 +618,14 @@ export default Zero
 ## Day 3 || Create your own react library and JSX
 
 
-1. Create a folder (Customreact)
+
+
+1.Create a folder (Customreact)
+
 a1.Create two file - index.html and CustomReact.js 
 
 
-2 Now we talk about index.html
+2.Now we talk about index.html
 
 
 ```
@@ -641,7 +644,7 @@ a1.Create two file - index.html and CustomReact.js
 
 
 
-3. CustomReact.js ; in this file we talk about how to create elements and render the files
+3.CustomReact.js ; in this file we talk about how to create elements and render the files
                     we discuss 2 approach a: basic approach , b: loop approach
 
                 
