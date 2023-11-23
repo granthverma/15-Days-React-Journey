@@ -618,6 +618,136 @@ export default Zero
 ## Day 3 || Create your own react library and JSX
 
 
+1. Create a folder (Customreact)
+a1.Create two file - index.html and CustomReact.js 
+
+
+2 Now we talk about index.html
+
+
+```
+<body>
+    <div id="root"></div> 
+    <!-- name depend on you  -->
+ <script src="Customreact.js"></script>
+ <!-- create custome js file its directly script come  -->
+
+</body>
+
+
+```
+
+<div> with the id "root." Additionally, you are including a custom JavaScript file named "Customreact.js" using the <script> tag.
+
+
+
+3. CustomReact.js ; in this file we talk about how to create elements and render the files
+                    we discuss 2 approach a: basic approach , b: loop approach
+
+                
+> all shortnotes in code file in hindi for better understand 
+
+
+```
+
+// basic approach 
+
+function ownRender(reactElements ,thridcontainer) {
+
+// render two things what (kya )aur  where (kha )
+// what (kya) -reactElements
+// where (kha) -thridcontainer
+
+
+    // const domELe = document.createElement(reactElements.type)
+    // domELe.innerHTML =reactElements.children
+
+    /**
+     * 1. store value  in domELe
+     * 2. create element in reactElements and type of element
+     * 3. access the value by domELe innerHTML  in reactElements ki children value
+     */
+
+//     domELe.setAttribute('href' ,reactElements.props.href)
+//     domELe.setAttribute('target' ,reactElements.props.target)
+
+//     thridcontainer.appendChild(domELe)
+// 
+
+
+//  by loop -------------
+
+const  domELe =document.createElement(reactElements.type)
+domELe.innerHTML = reactElements.children
+
+/**
+ * same as direct 
+ */
+for (const prop in reactElements.props ) {
+    if(prop === 'children')continue;
+    domELe.setAttribute(prop ,reactElements.props[prop])
+    
+}
+
+thridcontainer.appendChild(domELe)
+
+
+}
+
+/**
+ * for in loop liya then prop in mein reactElements.props define kiya
+ * old mein pahale check karne ke liya  if use kiya karte tha
+ * aur check karte tha ki prop agar equal hai child property ki contine karo
+ * nahi toh stop kar do 
+ * same hai bas name change pahle direact name tha now us hai prop bol rha haiu 
+ * then [] arry props likha raha hai 
+ */
+
+
+ /**
+     * 1. jo element create kiya tha us mein attribute set karna 
+     * 2. aue reactElements ki propety ko lena
+     * 3. then value get kar thrid container mein appendchild se
+     */
+
+
+const reactElements = {
+    type: 'A',
+    props :{
+        href :'https://granthcodes.com/',
+        target : '_blank'
+    },
+    children: 'Click me to  visit portfolio'
+}
+
+/**
+ * phale ek element create karo object hai jo ki type set karo imp baat
+ * type mein only single value store kar saket ho
+ * then whatever property you want us set kar do
+ * 
+ * what want you show on web in come with child 
+ */
+
+const secondContainer = document.querySelector('#root')
+
+ownRender(reactElements ,secondContainer)
+
+
+
+/**
+ * jaise react mein hota root kaise value store hota hai yha par secondContainer
+ * mein store hai aur document ki query selector se root ko select kiya hai 
+ * 
+ * own render jo create kiya tha wo hai 
+ * us mein reactElements - jaise mein sare element hai 
+ * secondContainer - jaise mein value store ki hai 
+ */
+
+
+
+
+```
+
 
 
 
