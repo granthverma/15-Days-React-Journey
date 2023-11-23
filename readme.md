@@ -648,7 +648,7 @@ a1.Create two file - index.html and CustomReact.js
                     we discuss 2 approach a: basic approach , b: loop approach
 
                 
-> all shortnotes in code file in hindi for better understand 
+> all short-notes in code file in hindi for better understanding
 
 
 ```
@@ -700,9 +700,9 @@ thridcontainer.appendChild(domELe)
 /**
  * for in loop liya then prop in mein reactElements.props define kiya
  * old mein pahale check karne ke liya  if use kiya karte tha
- * aur check karte tha ki prop agar equal hai child property ki contine karo
+ * aur check karte tha ki prop agar equal hai child property ki continue karo
  * nahi toh stop kar do 
- * same hai bas name change pahle direact name tha now us hai prop bol rha haiu 
+ * same hai bas name change pahle direact name tha now us hai prop bol rha hai 
  * then [] arry props likha raha hai 
  */
 
