@@ -615,7 +615,7 @@ export default Zero
 
 
 
-### Day 3 || Create your own react library and JSX
+## Day 3 || Create your own react library and JSX
 
 
 
