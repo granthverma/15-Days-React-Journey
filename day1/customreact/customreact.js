@@ -45,7 +45,7 @@ thridcontainer.appendChild(domELe)
 /**
  * for in loop liya then prop in mein reactElements.props define kiya
  * old mein pahale check karne ke liya  if use kiya karte tha
- * aur check karte tha ki prop agar equal hai child property ki contine karo
+ * aur check karte tha ki prop agar equal hai child property ki continue karo
  * nahi toh stop kar do 
  * same hai bas name change pahle direact name tha now us hai prop bol rha haiu 
  * then [] arry props likha raha hai 
