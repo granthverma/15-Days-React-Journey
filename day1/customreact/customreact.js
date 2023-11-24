@@ -11,7 +11,7 @@ function ownRender(reactElements ,thridcontainer) {
     // domELe.innerHTML =reactElements.children
 
     /**
-     * 1. store value  in domELe
+     * 1. store value  in domELe ,
      * 2. create element in reactElements and type of element
      * 3. access the value by domELe innerHTML  in reactElements ki children value
      */
