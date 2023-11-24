@@ -154,7 +154,7 @@ ownRender(reactElements ,secondContainer)
 /**
  * 1. container - root karke condation ko uda liya , render method se  render kar le in containes
  * 2 toh smajha nahi toh hum ne ek element create kiya   
- * baisc approch 
+ * baisc approch ,
  * loop approch 
  * custom render methods 
  * mainjs method  direct exe
