@@ -29,7 +29,7 @@ const  domELe =document.createElement(reactElements.type)
 domELe.innerHTML = reactElements.children
 
 /**
- * same as direct 
+ * same as  react 
  */
 for (const prop in reactElements.props ) {
     if(prop === 'children')continue;
