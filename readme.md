@@ -981,7 +981,7 @@ first step :  Go to into Your github Settings
 
 1. check your email (only one email allow  granth@gmail.com)
 2.then next step  check : To verify that the configuration has been set correctly, you can use the same git config user.email command as before.
-
+![Alt text](githubemail.png)
 
 ```
 git config user.email
