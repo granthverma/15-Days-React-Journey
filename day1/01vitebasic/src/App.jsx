@@ -24,3 +24,9 @@ function App() {
 }
 
 export default App
+
+// {} direactly as variable 
+// evaluate expression finally outcome  
+// if and loop big noooooo
+
+// return expression
