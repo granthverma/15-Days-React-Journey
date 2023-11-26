@@ -850,72 +850,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 <a href="https://github.com/facebook/react/" target="_blank">REACT BEHIND THE SCENES || GITHUB REPO </a> 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-makedown comment future refencence
-
-
-# H1
-## H2
-### H3
-
-
-**bold text**
-
-*italicized text*
-
-
-> blockquote
-
-
-
-1. First item
-2. Second item
-3. Third item
-
-
-
-
-- First item
-- Second item
-- Third item
-
-
-
-`code`
-
-
-
-	---
-
-
-
-  ![alt text](image.jpg)
-
-  [title](https://www.example.com)
-
-
-
-  	Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
 ## Day 4 || Hello Dosto Day start with Error ❗️❗️❗️❗️❗️
 
 
@@ -1020,7 +954,58 @@ The email address you configure in Git should match the email address associated
 
 
 
+makedown comment future refencence
 
+
+# H1
+## H2
+### H3
+
+
+**bold text**
+
+*italicized text*
+
+
+> blockquote
+
+
+
+1. First item
+2. Second item
+3. Third item
+
+
+
+
+- First item
+- Second item
+- Third item
+
+
+
+`code`
+
+
+
+	---
+
+
+
+  ![alt text](image.jpg)
+
+  [title](https://www.example.com)
+
+
+
+  	Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
 
 
 
