@@ -969,4 +969,4 @@ git push
 ```
 
 
-### Second Issue :  Why Github contribution only show the activity when we make a new repository????????  kkkkkk
+### Second Issue :  Why Github contribution only show the activity when we make a new repository????????  
