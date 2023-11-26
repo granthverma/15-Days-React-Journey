@@ -916,4 +916,57 @@ makedown comment future refencence
 - [ ] Update the website
 - [ ] Contact the media
 
+## Day 4 || Hello Dosto Day start with Error ❗️❗️❗️❗️❗️
+
+
+
+```
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/granthverma/15-Days-React-Journey.git'
+
+```
+
+Kya kare ab Hum ❓❓❓❓❓❓
+
+
+Pura Internet Par 2 hours invest kar ke baad Solution mile gaya ||
+May be Aapko bhi Kaam aa jaye ✅ ✅ ✅...
+
+1.first Step 👣
+
+```
+git fetch origin main:tmp
+
+```
+
+1. main:tmp: This part specifies that you want to fetch the changes for the remote main branch and store them locally in a branch named tmp. The format is source:destination, where source is the remote branch, and destination is the local branch where you want to store the changes.
+
+
+2.Second Step 👣 : So, the command is saying: "Push the changes from my local branch tmp to the remote repository (origin).
+
+```
+git push origin tmp
+
+```
+
+
+3.Third Step 👣 👣 👣 : 
+
+```
+git rebase tmp
+
+```
+
+The command git rebase tmp is used to rebase your current branch onto the tmp branch. This means that the commits in your current branch will be moved to the tip of the tmp branch, effectively incorporating the changes from tmp into your branch.
+
+
+4. Fourth Step :  Congratulations You Solve This Issue  ✨ ✨ ✨
+
+```
+
+git push
+
+```
+
+
 
