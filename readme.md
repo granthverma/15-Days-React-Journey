@@ -1003,18 +1003,25 @@ git config --global user.email "your.email@example.com"
 Replace "your.email@example.com" with the email address you want to use for your Git commits. The --global option sets this configuration globally for your user, so it will be used for all your Git repositories. If you want to set it only for a specific repository, omit the --global option and run the command within the repository
 
 
-4 .
-
-
-
-
-
-
-It should now display the updated email address. if your email address show then your work is done , if not then follow next step :
-
-
+4. Verify Configuration: To verify that the configuration has been set correctly, you can use the same git config user.email command as before.
 
 ```
-
+git config user.email
 
 ```
+It should now display the updated email address.
+
+### Note:
+
+The email address you configure in Git should match the email address associated with your GitHub or GitLab account if you want your contributions to be linked to your account on those platforms. It's important to use the same email address for your commits that you use on the version control hosting service to ensure proper attribution.
+
+
+
+
+
+
+
+
+
+
+
