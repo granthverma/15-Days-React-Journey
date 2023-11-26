@@ -969,7 +969,52 @@ git push
 ```
 
 
-### Second Issue :  Why Github contribution only show the activity when we make a new repository????????  
+### Second Issue :   Github contribution only show the activity when we make a new repository ,  commit inside github ????????  
+
+kafi dino se main commit vs code terminal mein karta but git ke contribution mein kuch show nahi hota ye kafi bada issue ho gaya mera liya toh kya kiya jaya   ❓❓❓❓❓❓ 
 
 
-#may be ho gaya
+karna chahiye to kya nahi hota hai toh Internet ki help se hum laga es issue solve karna mein toh solution yha raha 
+
+first step :  Go to into Your github Settings
+![Alt text](githubissue.png)
+
+1. check your email (only one email allow  granth@gmail.com)
+2.then next step  check : To verify that the configuration has been set correctly, you can use the same git config user.email command as before.
+
+
+```
+git config user.email
+
+
+```
+
+This will output the email address currently associated with your Git commits.
+
+
+3 .Configure or Change Email Address: If you need to configure or change the email address, use:
+
+```
+git config --global user.email "your.email@example.com"
+
+
+```
+
+Replace "your.email@example.com" with the email address you want to use for your Git commits. The --global option sets this configuration globally for your user, so it will be used for all your Git repositories. If you want to set it only for a specific repository, omit the --global option and run the command within the repository
+
+
+4 .
+
+
+
+
+
+
+It should now display the updated email address. if your email address show then your work is done , if not then follow next step :
+
+
+
+```
+
+
+```
