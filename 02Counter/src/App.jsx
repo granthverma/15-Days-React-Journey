@@ -21,8 +21,9 @@ function App() {
       alert("You've reached the maximum value (100)!");
       
     }
-
-  
+// add value concept easy hai only function lena callback name kuch bhi ho sakta hai 
+// assignment mile tha value 100 tk (20 tha but 100 le liya ) ek loop lekar  counter< 100 se ho jaya 
+// ek add on alert bhi le liya  value reach then alert message 
   } ;
 
 
