@@ -6,9 +6,9 @@ import './App.css'
 function App() {
   let [counter, setCounter] = useState(0)
 // set value of counter  useState koi bhi value defaluts value
-//two value  f - count
-// setcount s - its fnf is variable updated karne ke liya 
-  // let counter = 5
+//two value  first - count
+// setcount Second - its fnf is variable updated karne ke liya  man lo yhi main source hai 
+  // let helpful hai counter app ke liya 
 
 
   const addValue = () => {
