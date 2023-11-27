@@ -51,7 +51,7 @@ function App() {
     setCounter(counter)
     
   };
-
+// reset value  counter = 0 le li  now reset hota hai zero aa jayegi 
   return (
     <>
       
