@@ -1040,6 +1040,62 @@ export default App
 
 ```
 
+### DAY5 || START DAY-5 WITH READ ABOUT OTHER HOOKS
+
+its not part hitesh sir playlist but we read it 
+
+
+
+2. useEffect : useEffect is used to perform side effects in your components, such as fetching data, subscribing to services, or manually changing the DOM.
+
+
+```
+import React, { useState, useEffect } from 'react';
+
+const DataFetchingComponent = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Perform side effect (e.g., data fetching) here
+    const fetchData = async () => {
+      const response = await fetch('https://api.example.com/data');
+      const result = await response.json();
+      setData(result);
+    };
+
+    fetchData();
+  }, []); // Empty dependency array means the effect runs once after the initial render
+
+  return (
+    <div>
+      <p>Data: {data}</p>
+    </div>
+  );
+};
+
+
+```
+
+3. useContext: useContext is used to consume values from a React context.
+```
+
+import React, { useContext } from 'react';
+
+const MyContext = React.createContext();
+
+const ComponentUsingContext = () => {
+  const contextValue = useContext(MyContext);
+
+  return (
+    <div>
+      <p>Value from context: {contextValue}</p>
+    </div>
+  );
+};
+
+
+
+```
 
 
 
