@@ -1042,7 +1042,9 @@ export default App
 
 ### DAY5 || START DAY-5 WITH READ ABOUT OTHER HOOKS
 
-its not part hitesh sir playlist but we read it 
+<a href="https://react.dev/reference/react/hooks" target="_blank"> Read More About Hooks </a>
+
+its not part hitesh sir playlist but we read it some basic are following:
 
 
 
@@ -1127,6 +1129,11 @@ const CounterWithReducer = () => {
 
 
 ```
+
+
+
+
+
 
 
 
