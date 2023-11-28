@@ -1181,8 +1181,8 @@ makedown comment future refencence
 
 
 
+### Day 6 - TailWind And Props In React-js :
 
-##Day 6 - TailWind And Props In React-js :
 
 
 <a href="https://tailwindcss.com/docs/installation" target="_blank">Documentation TailWind Css || Get Started </a> 
