@@ -1135,10 +1135,10 @@ const CounterWithReducer = () => {
 
 ```
 
-### Virtual Dom Fiber Reconcillion :
+### Virtual Dom And Fiber Reconcillion :
 
 Documentation Dom Fiber  and Reconcillion 👉🏻 👉🏻 👉🏻 👉🏻 👉🏻 
-<a href="https://github.com/acdlite/react-fiber-architecture" target="_blank">REACT BEHIND THE SCENES || GITHUB REPO </a> 
+<a href="https://github.com/acdlite/react-fiber-architecture" target="_blank">Virtual Dom Fiber And Reconcillion</a> 
 
 some basic things from  documentation
 
@@ -1167,7 +1167,7 @@ Diffing of lists is performed using keys. Keys should be "stable, predictable, a
 
 ### Some basic points about Fiber from Documentation :
 
-
+ 
 1.We're about to discuss the heart of React Fiber's architecture.
 
 2.We've established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to.
