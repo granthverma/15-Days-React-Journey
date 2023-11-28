@@ -1266,6 +1266,40 @@ c. in react we use jsx so there class its keyword    we don't class , so we clas
 
 
 
+### props || props Stand for Properties
+
+props are used to transfer data from one component to another ,props are read only ,props are just like a function in javascript , {} always use 
+
+
+1. one way used  props by  (props way)
+
+```
+function Card(props) {}
+
+    <h1 class="text-lg font-semibold text-white">{props.username}</h1>
+
+```
+
+2 .second  way used props by {direct}
+
+
+```
+function Card({username}) {}
+
+    <h1 class="text-lg font-semibold text-white">{username}</h1>
+
+```
+3. used of propes
+
+```
+<Card username="disha" btnText='click to more info' pText='my name is disha '/>
+
+```
+
+
+
+
+
 
 
 

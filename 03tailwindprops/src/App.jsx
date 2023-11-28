@@ -36,8 +36,8 @@ function App() {
 <h1 className='BlinkMacSystemFont p-4 bg-red-400  text-black rounded-xl mb-4'>Tailwind</h1>
 
 
-<Card username="himanshu" btnText='visit-me' pText='hello nameste cahlo kaam ki baat  par aata hai' />
-<Card username="granth" btnText='click to more info' pText='my name is anjali '/>
+<Card username="anjali" btnText='visit-me' pText='hello nameste cahlo kaam ki baat  par aata hai' />
+<Card username="disha" btnText='click to more info' pText='my name is anjali '/>
 
 
 
