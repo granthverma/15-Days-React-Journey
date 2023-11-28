@@ -1258,10 +1258,10 @@ Before Start There Some  Website Its Help Build  Various Types Of Components and
 
 3. <a href="https://github.com/granthverma/15-Days-React-Journey#create-component-in-react-" target="_blank"> We discussed earlier how to create Components  </a>
 
-4. Important points :d
-1. rfc use for create second component files
-2. img tags must be </> 
-3. in react we use jsx so there class its keyword    we don't class , so we className to define class
+4. Important points :
+a. rfc use for create second component files
+b. img tags must be </> 
+c. in react we use jsx so there class its keyword    we don't class , so we className to define class
 
 
 
