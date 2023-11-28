@@ -1365,10 +1365,54 @@ function ChildComponent(props) {
 
 
 ```
+React Interview Question : can we use mutiple value
+   <!-- setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1) -->
 
 
 
 
+
+useState - value send in batch some = some hogi toh wosend nahi karga isliya hum  call back  ki help se prevCounter se value get kar lenge 
+
+
+```
+function App() {
+
+  const [counter , setCounter] = useState(15)
+
+  let counnter =15 
+
+  <!-- const addValue = () => {
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+  } -->
+
+
+
+   const addValue = () => {
+    setCounter(prevCounter => prevCounter+1 )
+     setCounter(prevCounter => prevCounter+1 )
+      setCounter(prevCounter => prevCounter+1 )
+       setCounter(prevCounter => prevCounter+1 )
+    
+  }
+
+
+
+
+
+
+
+
+}
+
+<!-- 19 -->
+```
 
 
 
