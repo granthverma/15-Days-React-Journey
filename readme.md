@@ -1224,6 +1224,32 @@ Add the @tailwind directives for each of Tailwind’s layers to your ./src/index
 
 ```
 
+4th : Start your build process 
+Run your build process with npm run dev.
+
+
+```
+npm run dev
+
+```
+
+5th : Start using Tailwind in your project
+
+Start using Tailwind’s utility classes to style your content
+
+```
+<h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+
+```
+
+
+
+
+
+
+
 
 
 
