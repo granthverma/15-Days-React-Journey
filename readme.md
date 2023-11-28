@@ -1185,8 +1185,44 @@ makedown comment future refencence
 # Day 5 - TailWind And Props In React-js :
 
 
+<a href="https://tailwindcss.com/docs/installation" target="_blank">Documentation TailWind Css || Get Started </a> 
 
 
+
+For Vite Framework TailWind Css  Guides : <a href="https://tailwindcss.com/docs/guides/vite" target="_blank">Install Tailwind CSS with Vite</a> 
+
+1st step : Install Tailwind CSS : Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
+
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+// generate new tailwind config files
+
+```
+
+2st step : Add the paths to all of your template files in your tailwind.config.js file.
+
+
+```
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+
+```
+
+3rd : Add the Tailwind directives to your CSS
+
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
 
 
 
