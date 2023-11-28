@@ -1137,12 +1137,24 @@ const CounterWithReducer = () => {
 
 ### Virtual Dom Fiber Reconcillion :
 
-Documents Dom Fiber Reconcillion 👉🏻 👉🏻 👉🏻 👉🏻 👉🏻 
+Documentation Dom Fiber  and Reconcillion 👉🏻 👉🏻 👉🏻 👉🏻 👉🏻 
 <a href="https://github.com/acdlite/react-fiber-architecture" target="_blank">REACT BEHIND THE SCENES || GITHUB REPO </a> 
 
+some basic things from  documentation
+
+### Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM."
 
 
+lets talk about  Reconcillion :The algorithm React uses to diff one tree with another to determine which parts need to be changed.
 
+2:A change in the data used to render a React app. Usually the result of `setState`. Eventually results in a re-render.
+
+
+The key points are:
+
+1.In a UI, it's not necessary for every update to be applied immediately; in fact, doing so can be wasteful, causing frames to drop and degrading the user experience.
+2.Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.
+3.A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.
 
 
 
