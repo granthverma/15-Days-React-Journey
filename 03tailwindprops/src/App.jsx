@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from '../components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,15 @@ function App() {
     </figcaption>
   </div>
 </figure> */}
+
+
+<h1 className='BlinkMacSystemFont p-4 bg-red-400  text-black rounded-xl mb-4'>Tailwind</h1>
+
+
+<Card username="himanshu" btnText='visit-me' pText='hello nameste cahlo kaam ki baat  par aata hai' />
+<Card username="granth" btnText='click to more info' pText='my name is anjali '/>
+
+
 
     </>
   )

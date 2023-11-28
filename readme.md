@@ -1244,6 +1244,27 @@ Start using Tailwind’s utility classes to style your content
 
 ```
 
+Learn About How to Create Components :
+
+Before Start There Some  Website Its Help Build  Various Types Of Components and UI-- 
+
+
+1. <a href="https://www.devui.io/components/cards" target="_blank"> Dev.io </a>
+
+2. <a href="https://mui.com/material-ui/" target="_blank"> Material.io </a>
+
+
+
+
+3. <a href="https://github.com/granthverma/15-Days-React-Journey#create-component-in-react-" target="_blank"> We discussed earlier how to create Components  </a>
+
+4. Important points
+.rfc use for create second component files
+.img tags must be </> 
+.in react we use jsx so there class its keyword we don't class , so we className to define class
+
+
+
 
 
 
