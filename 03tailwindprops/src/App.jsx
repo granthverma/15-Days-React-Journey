@@ -37,7 +37,7 @@ function App() {
 
 
 <Card username="anjali" btnText='visit-me' pText='hello nameste cahlo kaam ki baat  par aata hai' />
-<Card username="disha" btnText='click to more info' pText='my name is anjali '/>
+<Card username="disha" btnText='click to more info' pText='my name is disha '/>
 
 
 

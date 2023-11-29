@@ -31,7 +31,7 @@ function App() {
 
     if (counter > 0) {
       counter =  counter-1
-    setCounter(counter)
+     setCounter(counter)
       
     }  else {
       alert("You've reached the minimum value (0)!");
