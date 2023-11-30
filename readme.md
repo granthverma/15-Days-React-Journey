@@ -1415,14 +1415,14 @@ function App() {
 ```
 
 
+### Day 7  BG Changer Project :
+
+![Alt text](livebgcolors.png)
 
 
-
-
-
-
-
-
+1. lets basic logic BG Changer Project :
+  
+![Alt text](BGCOLORS.png)
 
 
 
