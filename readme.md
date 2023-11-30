@@ -1460,6 +1460,13 @@ Basic step vite and tailwind
 
 
 
+### Day 8 Password Generator Project 🎨 :
+Basic step vite and tailwind
+
+![Alt text](password-Generato.png)
+
+
+Lets With Ui 
 
 
 # H1
