@@ -1419,7 +1419,7 @@ function App() {
 
 ![Alt text](livebgcolors.png)
 
-.lets basic logic BG Changer Project 🎨 :
+.lets Understand basic logic BG Changer Project 🎨 :
   
 ![Alt text](BGCOLORS.png)
 
@@ -1432,7 +1432,7 @@ function App() {
 
 ```
 
-2.Second Step 👣 👣 :  We use 3 Div class , first for whole body , second Div for outer body where we show ours button , thrid Div for inner body "Imporant note its not necessary  its only use for looks better our projects 
+2.Second Step 👣 👣 :  We use 3 Div class , first for whole body , second Div for outer body where we show ours button , thrid Div for inner body "Imporant note its not necessary  its only we  use for our projects  looks better 
 
 ```
 <div>
@@ -1450,12 +1450,12 @@ function App() {
 ```
 
 
-3.third Step 👣 👣 👣 : take button with onclick events and call back function  : 
+3.third Step 👣 👣 👣 : Take  buttons with onclick events and call back function  and use setColor for set colors : 
 
 ```
  <button onClick={()=> setColor("yellow")}> </button>
 ```
-<a href="https://tailwindcss.com/docs/installation" target="_blank"> Click to See Source code  BG Changer Project 🎨 </a>
+<a href="https://github.com/granthverma/15-Days-React-Journey/tree/main/04bgChanger" target="_blank"> Click to See Source code  BG Changer Project 🎨 </a>
 
 
 
