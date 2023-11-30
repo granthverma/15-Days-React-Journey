@@ -1416,7 +1416,7 @@ function App() {
 
 
 ### Day 7  BG Changer Project 🎨 :
-Basic step vite and tailwind
+Basic of  step vite and tailwind
 
 ![Alt text](livebgcolors.png)
 
@@ -1461,7 +1461,7 @@ Basic step vite and tailwind
 
 
 ### Day : 8 Password Generator Project ☠️☠️☠️:
-Basic step vite and tailwind
+Basic of step vite and tailwind
 
 ![Alt text](password-Generato.png)
 
@@ -1602,8 +1602,7 @@ return (
 ```
 
 
-
-
+<a href="https://github.com/granthverma/15-Days-React-Journey/tree/main/05passwordGenerator" target="_blank"> Click to See Source code   Password GeneratorProject  </a>
 
 
 
