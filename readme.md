@@ -1460,18 +1460,165 @@ Basic step vite and tailwind
 
 
 
-### Day 8 Password Generator Project 🎨 :
+### Day : 8 Password Generator Project ☠️☠️☠️:
 Basic step vite and tailwind
 
 ![Alt text](password-Generato.png)
 
+Lets Understanding Basic  Concpets :
 
-Lets With Ui 
+![Alt text](<Password gen.png>)
+
+**Stepoutthisproject**
+
+
+1.import Statements: 
+```
+import { useState, useCallback, useEffect, useRef } from 'react'
+
+
+```
+
+These are import statements for hooks and features from the React library. You're using useState, useCallback, useEffect, and useRef in your component.
+
+
+2.Function Component:
+
+```
+function App() {}
+
+```
+3.State Hooks: set to length ,number ,char, and password jha store hoga
+
+```
+const [length, setLength] = useState(8)
+const [numberAllowed, setNumberAllowed] = useState(false);
+const [charAllowed, setCharAllowed] = useState(false)
+const [password, setPassword] = useState("")
+
+
+```
+These lines initialize state variables using the useState hook. length represents the password length
+
+numberAllowed and charAllowed are boolean flags for including numbers and special characters in the password
+
+and password holds the generated password
+
+in simple word length of password , char aur number and password mein store hoga 
+
+
+4 Password Generator Function:
+
+```
+const passwordGenerator = useCallback(() => {
+ let pass = "" // password store 
+let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    if (numberAllowed) str += "0123456789"
+    if (charAllowed) str += "!@#$%^&*-_+=[]{}~`"
+ <!-- one loop kitne length hogi password
+     for(let i =1 ; i<=length i++>){
+      let char =Math.floor(Math.random()*str.length+1)
+     }
+
+     setPassword(pass)
+
+     pass store setPassword mein 
+ 
+  -->
+
+}, [length, numberAllowed, charAllowed, setPassword])
+
+
+
+```
+This is a function named passwordGenerator created with useCallback. It generates a password based on the specified length and character types (uppercase, lowercase, numbers, and special characters).
+
+5.
+**Now-we-want-showinto labal**
+for this we useEffect():
+a.The useEffect Hook allows you to perform side effects in your components.
+b.Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+c.useEffect accepts two arguments. The second argument is optional.
+d.useEffect(<function>, <dependency>)
+
+
+
+5.1.Effect Hook:
+
+```
+useEffect(() => {
+  passwordGenerator()
+}, [length, numberAllowed, charAllowed, passwordGenerator])
+
+// es mein kuch change hoga then again run hoga program
+
+```
+
+
+This useEffect hook runs the passwordGenerator function whenever there's a change in length, numberAllowed, charAllowed, or password
+
+
+6.
+**useRef is a React Hook that lets you reference a value that’s not needed for rendering**
+
+const ref = useRef(initialValue)
+
+useRef ka use additional features ke liya hoga
+
+
+```
+
+passwordRef.current?.select();
+//input field so that it can be easily copied to the clipboard.
+    passwordRef.current?.setSelectionRange(0, 999);
+// 0 to 999 value select hogi 
+
+
+```
+
+7.Copy Password to Clipboard Function:
+
+
+```
+
+const copyPasswordToClipboard = useCallback(() => {
+  // ...
+}, [password])
+
+
+```
+
+This function, created with useCallback, selects and copies the generated password to the clipboard.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # H1
 ## H2
-### H3
+### H3 
 
 
 **bold text**
