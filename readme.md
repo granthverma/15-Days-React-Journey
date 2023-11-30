@@ -1591,7 +1591,15 @@ const copyPasswordToClipboard = useCallback(() => {
 This function, created with useCallback, selects and copies the generated password to the clipboard.
 
 
+8.Return JSX: 
 
+```
+return (
+  // all ui 
+)
+
+
+```
 
 
 
