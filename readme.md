@@ -1415,14 +1415,48 @@ function App() {
 ```
 
 
-### Day 7  BG Changer Project :
+### Day 7  BG Changer Project 🎨 :
 
 ![Alt text](livebgcolors.png)
 
-
-1. lets basic logic BG Changer Project :
+.lets basic logic BG Changer Project 🎨 :
   
 ![Alt text](BGCOLORS.png)
+
+
+1:First Step 👣 : creating a state variable color with an initial value of "grey" and a function setColor that can be used to update the color state ypically, you would use this state variable in your React component to manage and update the color dynamically.
+
+
+```
+  const [color, setColor] = useState("grey")
+
+```
+
+2.Second Step 👣 👣 :  We use 3 Div class , first for whole body , second Div for outer body where we show ours button , thrid Div for inner body "Imporant note its not necessary  its only use for looks better our projects 
+
+```
+<div>
+
+<div> 
+ <div> 
+   <button> </button>
+ 
+ </div>
+</div>
+
+
+ </div>
+
+```
+
+
+3.third Step 👣 👣 👣 : take button with onclick events and call back function  : 
+
+```
+ <button onClick={()=> setColor("yellow")}> </button>
+```
+<a href="https://tailwindcss.com/docs/installation" target="_blank"> Click to See Source code  BG Changer Project 🎨 </a>
+
 
 
 
