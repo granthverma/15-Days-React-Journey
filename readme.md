@@ -1416,6 +1416,7 @@ function App() {
 
 
 ### Day 7  BG Changer Project 🎨 :
+Basic step vite and tailwind
 
 ![Alt text](livebgcolors.png)
 
