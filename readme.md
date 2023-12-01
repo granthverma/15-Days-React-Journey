@@ -1583,6 +1583,7 @@ passwordRef.current?.select();
 
 const copyPasswordToClipboard = useCallback(() => {
   // ...
+  window.navigator.clipboard.writeText(password)
 }, [password])
 
 
