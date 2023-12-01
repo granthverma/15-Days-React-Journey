@@ -1618,11 +1618,51 @@ return (
 
 
 2.Next Step Create Own Hooks :How to create Hook ????-----
+
+some basic point :
 2.1. 🗂️ create a folder name of hooks
 2.2. 👉🏻 create a file useCurrencyinfo name
 2.3  👉🏻 hooks is function two things in first give you variable second give you variable const [data , Setdata]
 2.4 👉🏻 when you create own hooks you can use pre build hooks like: useEffect() , useState() .. many more 
 2.5 👉🏻 hooks method array mein two things return karta hai first variable , second function
+2.6 👉🏻 .js isliya liya beacuse its pure js hai
+
+3. UseCurrencyinfo. This component utilizes the useEffect and useState hooks to fetch currency information from an external API and manage the component's state.
+
+
+```
+
+import React, { useEffect, useState } from 'react';
+
+function UseCurrencyinfo() {
+  // Step 1: Initialize state using the useState hook , where data store
+  const [data, setData] = useState({});
+
+  // Step 2: Use the useEffect hook to fetch currency information 
+  useEffect(() => {
+    // Step 2a: Fetch data from an external API based on a dynamic currency value
+    fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
+      .then((res) => res.json())
+      .then((res) => setData(res[currency]));
+
+    // Step 2b: Log the data (Note: This log may not reflect the updated state immediately)
+    console.log(data);
+  }, [currency]); // Step 3: Dependency array to re-run the effect when currency changes
+
+  // Step 4: Log the data outside of the useEffect (may not be updated immediately)
+  console.log(data);
+
+  // Step 5: Return the data from the component
+  return data;
+}
+
+// Step 6: Export the component
+export default UseCurrencyinfo;
+
+
+
+
+```
 
 
 
