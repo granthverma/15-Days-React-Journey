@@ -1609,6 +1609,21 @@ return (
 
 
 
+### Day 9 || CurrencyConvertor 💵 💷 💸
+
+
+<a href="https://github.com/granthverma/15-Days-React-Journey#vite" target="_blank"> Start Your Project with Vite basic </a>
+
+<a href="https://github.com/granthverma/15-Days-React-Journey#day-6---tailwind-and-props-in-react-js-" target="_blank"> Next Step Tailwind config file for Project </a
+
+
+2.Next Step Create Own Hooks :How to create Hook ????-----
+2.1. 🗂️ create a folder name of hooks
+2.2. 👉🏻 create a file useCurrencyinfo name
+2.3  👉🏻 hooks is function two things in first give you variable second give you variable const [data , Setdata]
+2.4 👉🏻 when you create own hooks you can use pre build hooks like: useEffect() , useState() .. many more 
+2.5 👉🏻 hooks method array mein two things return karta hai first variable , second function
+
 
 
 
