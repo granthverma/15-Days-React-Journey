@@ -1614,7 +1614,7 @@ return (
 
 <a href="https://github.com/granthverma/15-Days-React-Journey#vite" target="_blank"> Start Your Project with Vite basic </a>
 
-<a href="https://github.com/granthverma/15-Days-React-Journey#day-6---tailwind-and-props-in-react-js-" target="_blank"> Next Step Tailwind config file for Project </a
+<a href="https://github.com/granthverma/15-Days-React-Journey#day-6---tailwind-and-props-in-react-js-" target="_blank"> Next Step Tailwind config file for Project </a>
 
 
 2.Next Step Create Own Hooks :How to create Hook ????-----
