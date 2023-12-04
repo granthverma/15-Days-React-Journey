@@ -5,11 +5,11 @@ import './index.css'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements  } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import User from './components/User/User.jsx'
-import Github , {githubInfoLoader }from './components/Github/Github.jsx'
-
+import Github  from './components/Github/Github.jsx'
+// {githubInfoLoader }
 // one route this things 
 
 
@@ -53,8 +53,8 @@ const router = createBrowserRouter (
       <Route path ='Github' element={<Github/>} />
 
       <Route
-       loader={githubInfoLoader}
-      path ='Github'
+      
+       path ='Github'
        element={<Github/>} 
        />
     </Route>
