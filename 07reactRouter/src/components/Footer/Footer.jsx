@@ -24,7 +24,7 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about" className="hover:underline">
+                                    <Link to="About" className="hover:underline">
                                         About
                                     </Link>
                                 </li>
@@ -54,7 +54,7 @@ function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <Link to="#" className="hover:underline">
+                                    <Link to="https://www.youtube.com/watch?v=VJov5QWEKE4" className="hover:underline">
                                         Privacy Policy
                                     </Link>
                                 </li>
@@ -77,7 +77,7 @@ function Footer() {
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="#" className="text-gray-500 hover:text-gray-900">
+                        <Link to="https://www.facebook.com" className="text-gray-500 hover:text-gray-900">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -93,7 +93,7 @@ function Footer() {
                             </svg>
                             <span className="sr-only">Facebook page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="" className="text-gray-500">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"

@@ -34,6 +34,7 @@ function Header() {
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <NavLink
+                                to="/"
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3 duration-200
                                         ${isActive?"text-orange": "text-gray-700"}
@@ -47,6 +48,7 @@ function Header() {
 
                             <li>
                                 <NavLink 
+                                 to="About"
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3 duration-200
                                         ${isActive?"text-orange": "text-gray-700"}
@@ -59,6 +61,7 @@ function Header() {
                           
                             <li>
                                 <NavLink 
+                                 to="Contact"
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3 duration-200
                                         ${isActive?"text-orange": "text-gray-700"}
