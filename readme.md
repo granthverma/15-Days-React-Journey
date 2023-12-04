@@ -1665,17 +1665,280 @@ export default UseCurrencyinfo;
 ```
 
 
+### Day 9 || ReactRouter 👨🏻‍💻 🔗🖇️
+
+
+1. <a href="https://github.com/granthverma/15-Days-React-Journey#vite" target="_blank"> Start Your Project with Vite basic </a>
+
+2. <a href="https://github.com/granthverma/15-Days-React-Journey#day-6---tailwind-and-props-in-react-js-" target="_blank"> Next Step Tailwind config file for Project </a>
+
+3.  lets discuss about router : <a href="https://reactrouter.com/en/main/start/tutorial" target="_blank"> documentation of router </a>
+
+what is react router : React Router is a React library that  enables dynamic navigation without refreshing the entire web page ,React Router is a library for handling routing in React applications. In a single-page application (SPA), where the entire application runs in the browser and only the content is updated dynamically, routing refers to the concept of navigating between different views or pages within the application without triggering a full page reload.
+
+
+4. Installation ✅ ✅ : install react router dom
+
+```
+  cd project name 
+ npm install react-router-dom
+
+```
+5. Import React Router Components  ✅ ✅ : include necessary elements from react-router-dom 
+
+
+```
+import { Link, NavLink } from "react-router-dom";
+
+// import link Navlink  from "react-router-dom";
+
+ import { useParams } from "react-router-dom";
+
+<!-- useParams is a hook provided by React Router that allows you to access the parameters (or dynamic segments) from the current route's URL -->
 
 
 
 
+```
+6. Layout  ✅ ✅ : fixed page  example header and footer fixed (iske beech mein page reload ho jayaga)
+
+```
+import {Outlet} from 'react-router-dom'
+
+<Header/>
+<Outlet/> // outlet se fixed ho jata hai 
+ <Footer/>
+
+
+```
+
+7. Set Up Routes ✅ ✅ ✅ ✅ :  Set Up Routes in main.jsx
+
+```
+<RouterProvider router={router}/>
+
+// wrap
+
+```
+Simple Router Component BrowserRouter for Wrap Routes 
+
+```
+ const router = createBrowserRouter ([
+//    {
+//     path:'/',
+//     element:<Layout/>,
+//     children:[
+
+//       {
+//         path:'',
+//         element:<Home/>
+    
+//     },
+
+//     {
+//       path:'About',
+//       element:<About/>,
+  
+//   },
+
+//   {
+//     path:'Contact',
+//     element:<Contact/>,
+
+//    }
+//     ]
+
+//    }
+
+
+// ]) 
+
+```
+
+Setup Routes 2 nd way
+
+
+```
+
+//createBrowserRouter
+//createRoutesFromElements 
+// <Route> </Route>
+
+const router = createBrowserRouter (
+  createRoutesFromElements(
+    <Route path='/' element={<Layout/>} >
+      <Route path ='' element={<Home/>} />
+      <Route path ='About' element={<About/>} />
+      <Route path ='Contact' element={<Contact/>} />
+      <Route path ='user/:userid' element={<User/>} />
+      <Route path ='Github' element={<Github/>} />
+
+      <Route
+      
+       path ='Github'
+       element={<Github/>} 
+       />
+    </Route>
+
+  )
+)
+
+```
+
+
+7. Navigation ✅ ✅ ✅ ✅ : <NavLink/> or </link>
+  components for clickable route links
+
+7a. <Link /> is a simple component used for navigation. It creates a hyperlink to the specified URL without any additional styling or attributes.
+
+Example:
+
+  ```
+  
+  import { Link } from 'react-router-dom';
+
+  const Navigation = () => (
+  <nav>
+    <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
+  </nav>
+);
+
+  
+  ```
+
+7b .NavLink /> is similar to <Link />, but it provides additional features for styling the active link based on the current route.
+Example:
+```
+import { NavLink } from 'react-router-dom';
+
+const Navigation = () => (
+  <nav>
+    <NavLink to="/" activeClassName="active">Home</NavLink>
+    <NavLink to="/about" activeClassName="active">About</NavLink>
+  </nav>
+);
 
 
 
+```
+7c. activeClassName:It accepts a prop called activeClassName to specify the class to apply when the link is active ,It adds an active class to the link when its to route is active.
 
 
 
+```
+${
+                                          isActive
+                                            ? "text-orange"
+                                            : "text-gray-700"
+}
 
+hai toh ?
+nahi hai toh :
+```
+
+
+
+8. Import data from api :
+
+```
+const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("https://api.github.com/users/granthverma")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setData(data);
+      });
+  }, []);
+
+
+```
+
+Get to data :.value you want 
+
+
+```
+
+return (
+    <div className="bg-orange-500 text-white text-3xl p-12  text-center flex flex-wrap">
+     
+     
+      <img src={data.avatar_url} alt="Git picture" width={300}  />
+      Github UserName :{data.login} <br/>
+      Name :{data.name}  <br/>
+      Location :{data.location} <br/>
+    </div>
+  );
+
+
+```
+
+9. useParams() :  is a hook provided by React Router that allows you to access the parameters (or dynamic segments) from the current route's URL. It's particularly useful when working with dynamic routes where certain parts of the URL can change, such as an ID or a slug.
+
+1. Import the hook:you need to import useParams from the react-router-dom library.
+
+```
+import { useParams } from 'react-router-dom';
+
+```
+2. Use it in a component: Place the useParams() hook within a functional component that is a descendant of a Route component.
+
+```
+
+<Route path ='user/:userid' element={<User/>} />
+
+
+import React from 'react';
+import { useParams } from 'react-router-dom';
+
+const UserProfile = () => {
+  // Using useParams to get the 'username' parameter from the URL
+  const { username } = useParams();
+
+  return (
+    <div>
+      <h2>User Profile</h2>
+      <p>Username: {username}</p>
+    </div>
+  );
+};
+
+export default UserProfile;
+
+
+```
+3. Dynamic Route Configuration: In your route configuration, use a dynamic parameter in the path attribute. This dynamic parameter is what useParams will extract
+
+```
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import UserProfile from './UserProfile';
+
+const App = () => {
+  return (
+    <Router>
+      <Route path="/user/:username" component={UserProfile} />
+    </Router>
+  );
+};
+
+export default App;
+
+
+```
+In this example, the :username in the path of the Route indicates that this part of the URL is dynamic, and useParams will be able to extract it.
+
+4. Accessing Parameters:The useParams() hook returns an object where the keys are the parameter names specified in the route, and the values are the corresponding values from the current URL.
+
+```
+const { parameterName } = useParams();
+
+
+```
+In the UserProfile component example above, const { username } = useParams(); extracts the username parameter from the URL.
+
+Now, when you navigate to a URL like /user/john, the UserProfile component will receive the username as a parameter, and you can use it in your component logic.
 
 
 
