@@ -35,7 +35,7 @@ function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/hiteshchoudhary"
+                                        href="https://github.com/granthverma"
                                         className="hover:underline"
                                         target="_blank"
                                         rel="noreferrer"
@@ -44,7 +44,8 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <Link to="/" className="hover:underline">
+                                <Link to="https://discord.com/" target="_blank" className="hover:underline hover:first-letter:">
+                                    {/* <Link to="/" className="hover:underline"> */}
                                         Discord
                                     </Link>
                                 </li>
