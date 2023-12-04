@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import User from './components/User/User.jsx'
+import Github , {githubInfoLoader }from './components/Github/Github.jsx'
 
 // one route this things 
 
@@ -49,8 +50,15 @@ const router = createBrowserRouter (
       <Route path ='About' element={<About/>} />
       <Route path ='Contact' element={<Contact/>} />
       <Route path ='user/:userid' element={<User/>} />
+      <Route path ='Github' element={<Github/>} />
 
+      <Route
+       loader={githubInfoLoader}
+      path ='Github'
+       element={<Github/>} 
+       />
     </Route>
+
   )
 )
 ReactDOM.createRoot(document.getElementById('root')).render(
