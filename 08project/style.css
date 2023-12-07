@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    margin: 20px;
+    background-color: blueviolet;
+}
+
+h1{
+    color:black
+}
+
+
+p{
+    color: yellow;
+}
