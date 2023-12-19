@@ -2020,8 +2020,92 @@ export default UserContextProvider;
 ```
 
 
-2. Thrid Step :
-//store aceess kaise hoga 
+3. Thrid Step : Create login page 
+
+```
+
+import React ,{useState ,useContext}from 'react'
+import UserContext from '../context/UserContext'
+
+function Login() {
+    // State for storing username and password
+  const [username , setUsername] = useState ('')
+  const[password , setPassword ]  = useState ('')
+
+  // Access setUser function from the UserContext
+
+  const {setUser}=useContext (UserContext)
+
+    // Form submission handler
+  const handleSubmit = (e)=>{
+    e.preventDefault() // value khai nahi jaye 
+    setUser(username , password)
+
+  }
+    return (
+        <div>
+            <h2>Login</h2>
+            <input type='text'
+            value={username}
+            onChange={(e)=> setUsername(e.target.value)}
+            
+            placeholder='username'/>
+               {" "}
+            <input type='text'
+            value={password}
+            onChange={(e)=> setPassword(e.target.value)}
+            placeholder='password'/>
+            <button onClick={handleSubmit}>Submit</button>
+        </div>
+        
+    )
+}
+
+export default Login
+
+
+
+
+```
+
+4. Fourth Step  : Create Profile Page 
+
+
+
+```
+import React , {useContext} from 'react' 
+import UserContext from '../context/UserContext'
+
+function Profile() {
+    // Access the user information from the UserContext
+    const {user} = useContext(UserContext)
+
+    // If user is not logged in, display a message
+  if(!user) return <div>Please login</div>
+ 
+  // If user is logged in, display a welcome message
+  return <div>Welcome {user.username }</div>
+
+    
+}
+
+export default Profile
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 # H1
 ## H2
 ### H3 
