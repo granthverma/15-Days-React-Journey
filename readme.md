@@ -1948,6 +1948,8 @@ Now, when you navigate to a URL like /user/john, the UserProfile component will 
 
 ### Day 10  ||  Context API 
 
+1. <a href="https://github.com/granthverma/15-Days-React-Journey#vite" target="_blank"> Start Your Project with Vite basic </a>
+
 > The Context API in React provides a way to share data or state across multiple components without passing it explicitly through props at every level of the component tree. It allows you to create a central store of data that can be accessed by any component within its subtree, streamlining the management of shared information in a React application.
 
 
@@ -1958,6 +1960,10 @@ The Context API is a part of React, a popular JavaScript library for building us
 In React, components are typically structured in a tree-like hierarchy, and data is passed down from parent components to child components through props. However, when you have multiple levels of nesting, it can become tedious to pass data through every intermediate component.
 
 The Context API helps to address this issue by allowing you to create a "context" that can be accessed by any component within its tree, regardless of how deeply nested they are. This context can store values such as state, functions, or any data you want to share.
+
+
+1. <a href="https://react.dev/reference/react/useContext" target="_blank"> 
+ Documentation Context Api</a>
 
 
 ### Here's a basic example of how the Context API works:
