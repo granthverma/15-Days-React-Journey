@@ -1983,7 +1983,24 @@ export default UserContext
 //Step 1 
 
 ```
+1. First Two : Create a provider component to wrap your components
 
+
+create provider context hoga toh provider ki bhi need hogi and this provider , provided data , systax are following :
+
+
+```
+<UserContext> // parent
+
+<Login/>
+<Card>
+    </data>
+</Card>
+
+// children component
+</UserContext>   
+
+```
 
 # H1
 ## H2
