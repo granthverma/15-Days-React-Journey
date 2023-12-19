@@ -1967,7 +1967,23 @@ The Context API helps to address this issue by allowing you to create a "context
 
 
 ### Here's a basic example of how the Context API works:
-.
+
+1. First Step : Create Context Folder and Create UserContext File
+
+
+```
+import React from 'react'
+
+const UserContext =React.createContext()
+
+export default UserContext
+
+// create  context variable and export context 
+
+//Step 1 
+
+```
+
 
 # H1
 ## H2
