@@ -1990,18 +1990,29 @@ create provider context hoga toh provider ki bhi need hogi and this provider , p
 
 
 ```
-<UserContext> // parent
+import React, { Children } from 'react'
+import UserContext from './UserContext'
 
-<Login/>
-<Card>
-    </data>
-</Card>
+const UserContextProvider = () => {
+ const [user , setUser] = React.useState(null)
+ // api call koi data call kar sakte ho yha
 
-// children component
-</UserContext>   
+    return (
+        <UserContext.Provider value ={{user, setUser}} >
+         {Children}
+
+        </UserContext.Provider>
+        
+
+    )
+}
+// value ={{}} koi bhi jo value ya object call karna wo 
+
+export default UserContextProvider
+   
 
 ```
-
+//store aceess kaise hoga 
 # H1
 ## H2
 ### H3 
