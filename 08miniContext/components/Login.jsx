@@ -2,11 +2,15 @@ import React ,{useState ,useContext}from 'react'
 import UserContext from '../context/UserContext'
 
 function Login() {
+    // State for storing username and password
   const [username , setUsername] = useState ('')
   const[password , setPassword ]  = useState ('')
 
+  // Access setUser function from the UserContext
+
   const {setUser}=useContext (UserContext)
 
+    // Form submission handler
   const handleSubmit = (e)=>{
     e.preventDefault() // value khai nahi jaye 
     setUser(username , password)
