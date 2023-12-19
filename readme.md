@@ -1961,6 +1961,7 @@ The Context API helps to address this issue by allowing you to create a "context
 
 
 ### Here's a basic example of how the Context API works:
+.
 
 # H1
 ## H2
