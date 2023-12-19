@@ -2186,6 +2186,237 @@ export default function useTheme(){
 
 ```
 
+4. add code  tailwind 
+
+```
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+  darkMode: "class",
+  // don't forget add 
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+
+```
+
+5. Add Copmonents :
+5a card Copmonents 
+
+```
+
+import React from 'react'
+
+export default function Card() {
+    return (
+        <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="/">
+                <img className="p-8 rounded-t-lg" src="https://www.apple.com/v/apple-watch-series-7/c/images/overview/hero/hero_intro_hardware__fg5bn8mfky2q_small_2x.jpg" alt="product_image1" />
+            </a>
+            <div className="px-5 pb-5">
+                <a href="/">
+                    <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                        Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
+                    </h5>
+                </a>
+                <div className="flex items-center mt-2.5 mb-5">
+                    <svg
+                        className="w-4 h-4 text-yellow-300 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 22 20"
+                    >
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg
+                        className="w-4 h-4 text-yellow-300 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 22 20"
+                    >
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg
+                        className="w-4 h-4 text-yellow-300 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 22 20"
+                    >
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg
+                        className="w-4 h-4 text-yellow-300 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 22 20"
+                    >
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg
+                        className="w-4 h-4 text-gray-200 dark:text-gray-600"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 22 20"
+                    >
+                        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                        4.0
+                    </span>
+                </div>
+                <div className="flex items-center justify-between">
+                    <span className="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                    <a
+                        href="/"
+                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    >
+                        Add to cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+
+
+```
+
+
+
+6. Add ThemeBTn compontents 
+
+```
+
+// Importing the 'react' library and the custom 'useTheme' hook from the theme context
+import React from 'react';
+import useTheme from '../contexts/theme';
+
+// Functional component for a theme toggle button
+export default function ThemeBtn() {
+    // Destructuring values from the useTheme hook
+    const { themeMode, lightTheme, darkTheme } = useTheme();
+
+    // Event handler for the theme toggle button
+    const onChangeBtn = (e) => {
+        // Checking whether the toggle button is checked (dark mode) or unchecked (light mode)
+        const darkModeStatus = e.currentTarget.checked;
+
+        // Invoking the appropriate theme change function based on the toggle button status
+        if (darkModeStatus) {
+            darkTheme();
+        } else {
+            lightTheme();
+        }
+    }
+
+    // JSX rendering of the theme toggle button
+    return (
+        <label className="relative inline-flex items-center cursor-pointer">
+            {/* Input checkbox element for the theme toggle */}
+            <input
+                type="checkbox"
+                value=""
+                className="sr-only peer"
+                onChange={onChangeBtn}
+                checked={themeMode === "dark"}
+            />
+
+            {/* Styled div representing the visual appearance of the theme toggle button */}
+            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+
+            {/* Text label indicating the purpose of the toggle button */}
+            <span className="ml-3 text-sm font-medium text-gray-900">Toggle Theme</span>
+        </label>
+    );
+}
+
+
+
+```
+
+
+7 work on App.js 
+
+```
+// Importing necessary React hooks and styles
+import { useEffect, useState } from 'react';
+import './App.css';
+
+// Importing the ThemeProvider from the theme context
+import { ThemeProvider } from './contexts/theme';
+
+// Importing components related to theme and content
+import ThemeBtn from './components/ThemeBtn';
+import Card from './components/Card';
+
+// Main App component
+function App() {
+  // State to manage the current theme mode
+  const [themeMode, setThemeMode] = useState("light");
+
+  // Functions to update the theme mode
+  const lightTheme = () => {
+    setThemeMode("light");
+  };
+
+  const darkTheme = () => {
+    setThemeMode("dark");
+  };
+
+  // Effect to apply changes in the theme to the document
+  useEffect(() => {
+    // Removing existing theme classes from the HTML element
+    document.querySelector('html').classList.remove("light", "dark");
+
+    // Adding the current theme class to the HTML element
+    document.querySelector('html').classList.add(themeMode);
+
+    // Dependency on 'themeMode' to re-run the effect when the theme changes
+  }, [themeMode]);
+
+  // JSX rendering of the App component
+  return (
+    // Providing the theme context to components within the ThemeProvider
+    <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
+      {/* Main container for the application */}
+      <div className="flex flex-wrap min-h-screen items-center">
+        <div className="w-full">
+          {/* Container for the theme toggle button */}
+          <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
+            <ThemeBtn />
+          </div>
+
+          {/* Container for the content card */}
+          <div className="w-full max-w-sm mx-auto">
+            <Card />
+          </div>
+        </div>
+      </div>
+    </ThemeProvider>
+  );
+}
+
+// Exporting the App component as the default export
+export default App;
+
+
+
+```
+
 # H1
 ## H2
 ### H3 
