@@ -1983,35 +1983,44 @@ export default UserContext
 //Step 1 
 
 ```
-1. First Two : Create a provider component to wrap your components
+2. Second Step : Create a provider component to wrap your components
 
 
 create provider context hoga toh provider ki bhi need hogi and this provider , provided data , systax are following :
 
 
 ```
-import React, { Children } from 'react'
+
+ import React from 'react'
 import UserContext from './UserContext'
 
-const UserContextProvider = () => {
+//import the necessary dependencies
+//This functional component takes a children prop,
+// which represents the nested components that will be wrapped by this context provider.
+const UserContextProvider = ({children}) => {
  const [user , setUser] = React.useState(null)
- // api call koi data call kar sakte ho yha
+
+ // initialize a state variable user using the useState hook
 
     return (
         <UserContext.Provider value ={{user, setUser}} >
-         {Children}
+         {children}
 
         </UserContext.Provider>
         
 
     )
 }
-// value ={{}} koi bhi jo value ya object call karna wo 
 
-export default UserContextProvider
+export default UserContextProvider;
+
+
    
 
 ```
+
+
+2. Thrid Step :
 //store aceess kaise hoga 
 # H1
 ## H2
