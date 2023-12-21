@@ -2426,11 +2426,11 @@ export default App;..
 2. <a href="https://github.com/granthverma/15-Days-React-Journey#day-6---tailwind-and-props-in-react-js-" target="_blank"> Next Step Tailwind config file for Project </a>
 
 3. Create Context file : ###step3
-1. TodoContext.js - for create useTodo hook 
-2. index.js - for export index 
+3.1. TodoContext.js - for create useTodo hook 
+3.2. index.js - for export index 
 
 
-TodoContext.js - Context API and Custom Hooks
+3.1 :TodoContext.js - Context API and Custom Hooks
 
 ```
 
@@ -2470,7 +2470,7 @@ export const TodoProvider =TodoContext.Provider
 
 ```
 
-3. index.js -export TodoContext, TodoProvider, and useTodo 
+3.2: index.js -export TodoContext, TodoProvider, and useTodo 
 
 ```
 export {TodoContext ,TodoProvider ,useTodo} from "./TodoContext"
