@@ -2417,6 +2417,66 @@ export default App;..
 
 ```
 
+
+### Day 12 ||  ToDo APP ✚ ✅ ,Building a Todo App with React: Context API and Custom Hooks
+
+
+1. <a href="https://github.com/granthverma/15-Days-React-Journey#vite" target="_blank"> Start Your Project with Vite basic </a>
+
+2. <a href="https://github.com/granthverma/15-Days-React-Journey#day-6---tailwind-and-props-in-react-js-" target="_blank"> Next Step Tailwind config file for Project </a>
+
+3. Create Context file : ###step3
+1. TodoContext.js - for create useTodo hook 
+2. index.js - for export index 
+
+
+TodoContext.js - Context API and Custom Hooks
+
+```
+
+// Importing necessary functions from the 'react' library and 
+import {createContext , useContext} from 'react'
+
+
+// Creating a React context named 'TodoContext' with an initial value
+export const  TodoContext = createContext({
+   // Initial array of todos with one default todo item
+   todos : [
+    {
+      id :1 ,
+      todo : "Todo msg",
+      completed : false ,
+   }
+] ,
+// Placeholder functions for managing todos only function 
+   addTodo : (todo)=>{},
+   updatedTodo : (id ,todo)=>{},
+   deletedTodo : (id)=>{},
+   toggleCompleted : (id)=>{},
+
+});
+
+
+// Custom hook for easily consuming the 'TodoContext' useContext ke sath value leni hogi 
+
+export const useTodo = () => {
+    return useContext(TodoContext)
+};
+
+// Creating a provider component named 'TodoProvider
+export const TodoProvider =TodoContext.Provider
+
+
+
+```
+
+3. index.js -export TodoContext, TodoProvider, and useTodo 
+
+```
+export {TodoContext ,TodoProvider ,useTodo} from "./TodoContext"
+
+```
+
 # H1
 ## H2
 ### H3 
