@@ -14,7 +14,7 @@ export const  TodoContext = createContext({
 ] ,
 // Placeholder functions for managing todos only function 
    addTodo : (todo)=>{},
-   updatedTodo : (id ,todo)=>{},
+   updateTodo : (id ,todo)=>{},
    deleteTodo : (id)=>{},
    toggleComplete : (id)=>{},
 
