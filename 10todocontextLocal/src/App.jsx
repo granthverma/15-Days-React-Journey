@@ -6,29 +6,33 @@ import './App.css'
 function App() {
  const[todos , setTodos]=useState([])
  
-const addTodo = (todo)=>{
+ 
 
-  setTodos((prev) => [{id:Date.now() , ...todo}] , ...prev)
+ const addTodo = (todo)=>{
+  setTodos((prev)=>[{id:Date.now(), ...todo},prev] )
+ },
+ const  updatedTodo = (id ,todo)=>{
 
+  setTodos((prev)=>prev.map((prevTodo)=>(prevTodo.id===id?todo:prevTodo)))
+ },
+
+ const deleteTodo =(id)=>{
+  setTodos((prev)=>prev.filter((todo)=>todo.id!==id))
+ },
+
+ const toggleComplete = (id)=> setTodos((prev)=>prev.map((prevTodo)=>(prevTodo.id===id?{
+  ...prevTodo , completed:!completed.prevTodo
+ }:prevTodo)))
 }
-const updatedTodo = (id ,todo)=>{
-  setTodos((prev)=> prev.map((prevTodo)=>(prev.Todo.id === id ?todo :prev)) )
-  
-}
-
-
-const deleteTodo = (todo)=>{
-  setTodos((prev)=> prev.filter ((todo)=> todo.id !==id))
-}
 
 
 
-const toggleComplete = (todo)=>{
-  setTodos((prev) => prev.map ((prevTodo) =>
-  prevTodo.id ===id ?{...prevTodo,
-    completed:!prevTodo.completed
-  
-  }:prevTodo))
+
+
+
+
+
+           
   
 }
 
