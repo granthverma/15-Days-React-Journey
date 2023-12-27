@@ -80,5 +80,5 @@ function App() {
   );
 }
 
-// Exporting the App component as the default export
+// Exporting the App component as the default export .......
 export default App;
