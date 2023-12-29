@@ -2548,6 +2548,95 @@ useEffect(() => {
   }, [todos]);
 
 ```
+
+
+6. Now work on From  : what we need this from 
+- State for managing the input value
+- Accessing the addTodo function from the TodoContext
+- Function to handle form submission
+- Check if the todo input is empty
+- Add the todo to the list
+- Clear the todo input after submission
+- Form for adding todos
+- Input field for entering todo 
+- Button to submit the todo
+- Exporting the TodoForm component
+
+
+- Code are following -
+
+```
+
+import React, { useState } from 'react';
+import { useTodo } from '../context/TodoContext';
+
+function TodoForm() {
+    // State for managing the input value
+    const [todo, setTodo] = useState("");
+
+    // Accessing the addTodo function from the TodoContext
+    const { addTodo } = useTodo();
+
+    // Function to handle form submission
+    const add = (e) => {
+        e.preventDefault();
+
+        // Check if the todo input is empty
+        if (!todo) return;
+
+        // Add the todo to the list
+        addTodo({ todo, completed: false });
+
+        // Clear the todo input after submission
+        setTodo("");
+    }
+
+    return (
+        // Form for adding todos
+        <form onSubmit={add} className="flex">
+            {/* Input field for entering todo */}
+            <input
+                type="text"
+                placeholder="Write Todo..."
+                className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
+                value={todo}
+                onChange={(e) => setTodo(e.target.value)}
+            />
+
+            {/* Button to submit the todo */}
+            <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0">
+                Add
+            </button>
+        </form>
+    );
+}
+
+// Exporting the TodoForm component
+export default TodoForm;
+
+
+```
+
+
+7. After This Now we work on todo item What ww need??
+
+- State to manage whether the todo is editable or not
+-  State to store the current todo message
+
+-  Destructuring values from the useTodo custom hook
+
+- Function to handle editing and saving a todo
+- Function to toggle the completion status of a todo
+
+- Checkbox for marking the todo as completed
+- Input field for displaying and editing the todo message
+- Edit/Save button - toggles between edit and save mode 
+- Edit or save based on current state
+
+- Delete button for removing the todo
+
+
+
 # H1
 ## H2
 ### H3 
