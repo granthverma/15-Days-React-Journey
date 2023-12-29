@@ -1985,6 +1985,10 @@ export default UserContext
 //Step 1 
 
 ```
+
+
+
+
 2. Second Step : Create a provider component to wrap your components
 
 
@@ -2023,6 +2027,8 @@ export default UserContextProvider;
 
 
 3. Thrid Step :  Create Components login page 
+
+
 
 ```
 
@@ -2069,6 +2075,8 @@ export default Login
 
 
 ```
+
+
 
 4. Fourth Step  : Create Profile Page 
 
@@ -2473,7 +2481,7 @@ export const TodoProvider =TodoContext.Provider
 
 3.2: index.js -export TodoContext, TodoProvider, and useTodo 
 
-``
+```
 export {TodoContext ,TodoProvider ,useTodo} from "./TodoContext"
 
 ```
@@ -2748,8 +2756,7 @@ export { TodoForm, TodoItem };
 10. Add Todo form and Loop and add TodoItem components  
 
 ```
-
-   <div className="bg-[#172842] min-h-screen py-8">
+<div className="bg-[#172842] min-h-screen py-8">
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
           <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
           <div className="mb-4">
@@ -2767,9 +2774,12 @@ export { TodoForm, TodoItem };
         </div>
       </div>
 
-
-
 ```
+
+   
+
+
+
 
 
 
