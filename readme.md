@@ -2477,6 +2477,77 @@ export {TodoContext ,TodoProvider ,useTodo} from "./TodoContext"
 
 ```
 
+4. Add Functionality : add + , Updated ➡️ , ␡ delete  , toggle complete 
+
+Function to add a new todo :
+
+ add + : add the value and store the value also , diffenent unique id 
+
+
+
+ ```
+ const addTodo = (todo) => {
+    setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
+  };
+
+ ```
+
+Function to update an existing todo
+
+```
+const updateTodo = (id, todo) => {
+    setTodos((prev) =>
+      prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo))
+    );
+  };
+```
+
+ // Function to delete a todo
+
+```
+const deleteTodo = (id) => {
+    setTodos((prev) => prev.filter((todo) => todo.id !== id));
+  };
+
+```
+ // Function to toggle the completion status of a todo
+
+```
+const toggleComplete = (id) => {
+    setTodos((prev) =>
+      prev.map((prevTodo) =>
+        prevTodo.id === id ? { ...prevTodo, completed: !prevTodo.completed } : prevTodo
+      )
+    );
+  };
+
+
+```
+
+5. localStorage on component mount  store value in localStorage
+
+
+- Effect hook to load todos from localStorage on component mount
+
+```
+
+useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem('todos'));
+
+    if (todos && todos.length > 0) {
+      setTodos(todos);
+    }
+  }, []);
+
+```
+- Effect hook to save todos to localStorage whenever todos are updated
+
+```
+useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
+
+```
 # H1
 ## H2
 ### H3 

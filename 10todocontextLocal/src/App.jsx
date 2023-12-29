@@ -2,14 +2,14 @@
 import { useState, useEffect } from 'react';
 
 // Importing the TodoProvider from the specified context
-import { TodoProvider } from '../context/TodoContext';
+import { TodoProvider } from './context/TodoContext';
 
 // Importing the styling for the App component
 import './App.css';
 
 // Importing the TodoForm and TodoItem components
-import TodoForm from '../components/TodoFrom';
-import TodoItem from '../components/TodoItem';
+import TodoForm from './components/TodoFrom';
+import TodoItem from './components/TodoItem';
 
 // Main App component
 function App() {
