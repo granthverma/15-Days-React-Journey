@@ -2779,12 +2779,32 @@ export { TodoForm, TodoItem };
    
 
 
+### Day 13 ||  Redux , redux-toolkit 
 
 
 
+1. <a href="https://github.com/granthverma/15-Days-React-Journey#vite" target="_blank"> Start Your Project with Vite basic </a>
 
+2. <a href="https://github.com/granthverma/15-Days-React-Journey#day-6---tailwind-and-props-in-react-js-" target="_blank"> Next Step Tailwind config file for Project </a>
 
+3. <a href="https://redux.js.org/introduction/getting-started" target="_blank"> Getting Started with Redux
+</a>
 
+- The Redux core library is available as a package on NPM for use with a module bundler or in a Node application:
+
+```
+
+# NPM
+npm install redux
+
+```
+- Redux Toolkit is available as a package on NPM for use with a module bundler or in a Node application:
+
+```
+# NPM
+npm install @reduxjs/toolkit
+
+```
 
 
 # H1
