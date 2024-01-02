@@ -12,7 +12,7 @@ function Todos() {
         {todoSlice.map((todo)=>(
            <li key={todo.id}>
            {todo.text}
-    <button onClick={() => dispatch(removeTodo(todo.id))}></button>
+    <button onClick={() => dispatch(removeTodo(todo.id))}> ✚ </button>
          </li>
         ))}
          
