@@ -11,8 +11,10 @@ function AddTodo() {
 
     const addTodoHandler = (e) => {
         e.preventDefault()
-        dispatch(addTodo(input))
-        setInput('')
+        if (input.trim().length > 0) {
+          dispatch(addTodo(input));
+          setInput("");
+        }
     }
 
 
@@ -23,12 +25,14 @@ return (
     placeholder='Enter a Todo ..'
     value={input}
     onChange={(e)=>setInput(e.target.value)}
-    className=''
+    className=' p-2  border border-gray-300 rounded-md  focus:outline-none focus:border-blue-500' 
 
   
   />
-  <button type='submit'
-        className=''
+  <button 
+  type='submit'
+  className='bg-color bg-sky-500 p-3 text-white rounded-xl  font-bold  hover:bg-green-600 ml-4 '
+    
   
   > Add Todo</button>
 
